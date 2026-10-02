@@ -1,0 +1,33 @@
+name: Decode staged resume PDFs
+on:
+  workflow_dispatch:
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode EN and CN resumes
+        run: |
+          set -euo pipefail
+          mkdir -p resumes
+          cat resumes/_staging/EN/part-*.b64 | tr -d '\n\r ' | base64 -d > resumes/Fiona-Tang-Resume-EN.pdf
+          cat resumes/_staging/CN/part-*.b64 | tr -d '\n\r ' | base64 -d > resumes/Fiona-Tang-Resume-CN.pdf
+          python3 - <<'PY'
+          from pathlib import Path
+          for p in [Path('resumes/Fiona-Tang-Resume-EN.pdf'), Path('resumes/Fiona-Tang-Resume-CN.pdf')]:
+              b = p.read_bytes()[:5]
+              assert b == b'%PDF-', (p, b)
+              print(p, 'ok', p.stat().st_size)
+          PY
+          rm -rf resumes/_staging
+      - name: Commit PDF resumes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resumes/Fiona-Tang-Resume-EN.pdf resumes/Fiona-Tang-Resume-CN.pdf
+          git add -A resumes/_staging || true
+          git status
+          git commit -m "Add Fiona Tang EN and CN resume PDFs" || exit 0
+          git push
