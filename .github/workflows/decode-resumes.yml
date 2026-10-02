@@ -12,8 +12,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p resumes
-          cat resumes/_staging/EN/part-*.b64 | tr -d '\n\r ' | base64 -d > resumes/Fiona-Tang-Resume-EN.pdf
-          cat resumes/_staging/CN/part-*.b64 | tr -d '\n\r ' | base64 -d > resumes/Fiona-Tang-Resume-CN.pdf
+          cat resumes/_staging/EN/*.b64 | tr -d '\n\r ' | base64 -d > resumes/Fiona-Tang-Resume-EN.pdf
+          cat resumes/_staging/CN/*.b64 | tr -d '\n\r ' | base64 -d > resumes/Fiona-Tang-Resume-CN.pdf
           python3 - <<'PY'
           from pathlib import Path
           for p in [Path('resumes/Fiona-Tang-Resume-EN.pdf'), Path('resumes/Fiona-Tang-Resume-CN.pdf')]:
@@ -26,8 +26,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add resumes/Fiona-Tang-Resume-EN.pdf resumes/Fiona-Tang-Resume-CN.pdf
-          git add -A resumes/_staging || true
+          git add -A resumes/
           git status
           git commit -m "Add Fiona Tang EN and CN resume PDFs" || exit 0
           git push
