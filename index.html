@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier-FionaTang</title>
+  <meta name="description" content="Atelier-FionaTang — fashion design portfolio by Fiona Tang." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">Menu</button>
+
+  <div class="app">
+    <aside class="nav" id="sideNav">
+      <div>
+        <a href="#home" class="brand" data-nav>Atelier-FionaTang</a>
+        <div class="brand-sub">Fashion Design Portfolio</div>
+      </div>
+      <ul class="nav-list" id="navList">
+        <!-- filled by JS -->
+      </ul>
+      <div class="nav-footer">© Atelier-FionaTang</div>
+    </aside>
+
+    <main class="main" id="main">
+      <section class="panel panel--home active" id="panel-home" data-panel="home">
+        <p class="panel-kicker">00 / Atelier</p>
+        <h1 class="panel-title">Atelier-FionaTang</h1>
+        <p class="panel-lead">
+          Fashion through craft, silhouette, and quiet luxury —
+          collections, embroidery, digital exploration, and technical design.
+        </p>
+        <div class="home-meta">
+          <span>Fiona Tang</span>
+          <span>Fashion Designer</span>
+          <span>Portfolio</span>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-about" data-panel="about">
+        <p class="panel-kicker">01 / About</p>
+        <h1 class="panel-title">Who I am</h1>
+        <p class="panel-lead">
+          Fiona Tang is a fashion designer working across collection design,
+          beading &amp; embroidery, CLO 3D, print, and AI-assisted exploration.
+        </p>
+        <div class="panel-body">
+          <p>
+            My practice sits between atelier craft and contemporary digital tools —
+            building seasonal collections with clear silhouette language, refined
+            surface design, and production-ready technical packs.
+          </p>
+          <p>
+            I am skilled in garment construction thinking, lookbook storytelling,
+            embroidery / beading development, CLO Design, print design, tech packs,
+            and collaborative brand work.
+          </p>
+        </div>
+        <div class="skills">
+          <span class="skill">Collection Design</span>
+          <span class="skill">Beading &amp; Embroidery</span>
+          <span class="skill">CLO 3D</span>
+          <span class="skill">Print Design</span>
+          <span class="skill">Tech Packs</span>
+          <span class="skill">AI Exploration</span>
+          <span class="skill">Sketches</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn" href="resumes/en-resume.txt" id="en-resume" download>English Resume ↓</a>
+          <a class="btn btn--ghost" href="resumes/zh-resume.txt" id="zh-resume" download>中文简历 ↓</a>
+        </div>
+        <p class="add-hint">Replace <code>resumes/en-resume.txt</code> and <code>resumes/zh-resume.txt</code> with real PDFs and update the button <code>href</code>s.</p>
+      </section>
+
+      <section class="panel" id="panel-collections" data-panel="collections">
+        <p class="panel-kicker">02 / Collections</p>
+        <h1 class="panel-title">Seasonal collections</h1>
+        <p class="panel-lead">
+          Modular lookbooks and garment details — add as many seasons as you need.
+        </p>
+        <div class="grid grid--2" id="collectionsGrid"></div>
+        <div class="detail" id="collectionDetail"></div>
+        <p class="add-hint">
+          Add a collection in <code>data.js</code> → <code>COLLECTIONS</code> array
+          (id, season, title, blurb, lookbook[], garments[]).
+        </p>
+      </section>
+
+      <section class="panel" id="panel-beading" data-panel="beading">
+        <p class="panel-kicker">03 / Beading &amp; Embroidery</p>
+        <h1 class="panel-title">Surface &amp; craft</h1>
+        <p class="panel-lead">
+          Photo and video modules for beading and embroidery studies — expand freely.
+        </p>
+        <div class="module-list" id="beadingModules"></div>
+        <p class="add-hint">
+          Add modules in <code>data.js</code> → <code>BEADING_MODULES</code>
+          (title, media: [{type:'photo'|'video', label}]).
+        </p>
+      </section>
+
+      <section class="panel" id="panel-ai" data-panel="ai">
+        <p class="panel-kicker">04 / AI Exploration</p>
+        <h1 class="panel-title">AI creation works</h1>
+        <p class="panel-lead">
+          Each module holds model studies and lookbook frames generated / directed with AI.
+        </p>
+        <div class="module-list" id="aiModules"></div>
+        <p class="add-hint">
+          Add projects in <code>data.js</code> → <code>AI_MODULES</code>
+          (title, models[], lookbook[]).
+        </p>
+      </section>
+
+      <section class="panel" id="panel-clo" data-panel="clo">
+        <p class="panel-kicker">05 / CLO Design</p>
+        <h1 class="panel-title">CLO Design</h1>
+        <p class="panel-lead">Digital garment studies and 3D draping stills.</p>
+        <div class="grid grid--3" id="cloGrid"></div>
+        <p class="add-hint">Add images in <code>data.js</code> → <code>CLO_PHOTOS</code>.</p>
+      </section>
+
+      <section class="panel" id="panel-print" data-panel="print">
+        <p class="panel-kicker">06 / Print Design</p>
+        <h1 class="panel-title">Print design</h1>
+        <p class="panel-lead">Textile and surface print explorations.</p>
+        <div class="grid grid--2" id="printGrid"></div>
+        <p class="add-hint">Add prints in <code>data.js</code> → <code>PRINT_DESIGNS</code>.</p>
+      </section>
+
+      <section class="panel" id="panel-techpack" data-panel="techpack">
+        <p class="panel-kicker">07 / Tech Pack</p>
+        <h1 class="panel-title">Technical packs</h1>
+        <p class="panel-lead">Downloadable attachments for production partners.</p>
+        <div class="download-list" id="techpackList"></div>
+        <p class="add-hint">
+          Place files in <code>techpacks/</code> and list them in
+          <code>data.js</code> → <code>TECH_PACKS</code>.
+        </p>
+      </section>
+
+      <section class="panel" id="panel-sketches" data-panel="sketches">
+        <p class="panel-kicker">08 / Sketches</p>
+        <h1 class="panel-title">Sketches</h1>
+        <p class="panel-lead">Hand and digital sketch gallery.</p>
+        <div class="grid grid--4" id="sketchesGrid"></div>
+        <p class="add-hint">Add sketches in <code>data.js</code> → <code>SKETCHES</code>.</p>
+      </section>
+
+      <section class="panel" id="panel-collaboration" data-panel="collaboration">
+        <p class="panel-kicker">09 / Collaboration</p>
+        <h1 class="panel-title">Let’s collaborate</h1>
+        <p class="panel-lead">
+          Open to brand partnerships, capsule commissions, embroidery development,
+          and digital fashion projects.
+        </p>
+        <div class="collab-grid">
+          <ul class="collab-list">
+            <li>Seasonal capsule collections</li>
+            <li>Beading &amp; embroidery development</li>
+            <li>CLO 3D visualization</li>
+            <li>Print &amp; surface design</li>
+            <li>Tech pack &amp; production support</li>
+            <li>AI lookbook direction</li>
+          </ul>
+          <div class="contact-block">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:hello@atelier-fionatang.com">hello@atelier-fionatang.com</a></p>
+            <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@atelier.fionatang</a></p>
+            <p>Based in — (city placeholder)</p>
+            <div class="btn-row" style="margin-top:1.5rem">
+              <a class="btn" href="mailto:hello@atelier-fionatang.com">Write to me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-shop" data-panel="shop">
+        <p class="panel-kicker">10 / Online Shop</p>
+        <h1 class="panel-title">Online Shop</h1>
+        <p class="panel-lead">Exclusive storefront — retained for launch.</p>
+        <div class="shop-empty">
+          <h3>Store coming soon</h3>
+          <p>This module is kept for the exclusive online store. Currently vacant.</p>
+          <a class="btn" href="https://example.com/atelier-fionatang-shop" target="_blank" rel="noopener" id="shopExternalLink">
+            Visit Online Shop →
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
