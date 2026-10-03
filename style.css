@@ -1,0 +1,392 @@
+/* Zero Reset & Monospace System Configuration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #fcfcfc;
+    color: #111111;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Monospace Layout Utilities based on Zoe Redmond System */
+.section-number, .logo, .menu-toggle, .nav a, .hero-section .hero-title, .section-title, .vacant-badge, .btn {
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+/* Header Config */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    background-color: rgba(252, 252, 252, 0.95);
+    border-bottom: 1px solid #eeeeee;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555555;
+    margin-left: 24px;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: #111111;
+}
+
+/* Container Structure */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* Sequential Number Styles */
+.section-number {
+    font-size: 0.85rem;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+/* Section Spacing Engines */
+.hero-section {
+    padding-top: 180px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    letter-spacing: -0.04em;
+}
+
+.hero-sub {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 750px;
+    color: #444444;
+    font-weight: 300;
+}
+
+.portfolio-section {
+    padding: 100px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing: -0.03em;
+}
+
+/* About Module Config */
+.text-block {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.text-muted {
+    color: #666666;
+}
+
+.resume-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Button UI Definitions */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #111111;
+}
+
+.btn-primary:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #111111;
+    border: 1px solid #111111;
+}
+
+.btn-secondary:hover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.btn-disabled {
+    background-color: #f0f0f0;
+    color: #aaaaaa;
+    border: 1px solid #e0e0e0;
+    cursor: not-allowed;
+}
+
+/* Advanced Modular Lookbook & Grid Engine Config */
+.modular-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.modular-block {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #f0f0f0;
+}
+
+.modular-header-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.modular-blurb {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 25px;
+    max-width: 700px;
+}
+
+.media-row-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    color: #888888;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 15px;
+}
+
+.media-horizontal-strip {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+}
+
+.media-horizontal-strip img, .media-horizontal-strip video {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+    background-color: #fafafa;
+}
+
+/* Image Grid Modules (CLO, Print, Sketches) */
+.image-grid-modular {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+}
+
+.grid-item-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.grid-item-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem;
+    color: #666666;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* Tech Pack Attachment Module Style */
+.techpack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.techpack-card {
+    border: 1px solid #111111;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.techpack-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Collaboration Layout Layout Config */
+.collab-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 50px;
+}
+
+.collab-info ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.collab-info li {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 20px;
+}
+
+.collab-info li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #888888;
+}
+
+.contact-card {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+.contact-card h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+#contact-btn {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Online Shop Configuration Area */
+.shop-placeholder {
+    text-align: center;
+    padding: 60px 20px;
+    border: 1px dashed #cccccc;
+    background-color: #fafafa;
+}
+
+.vacant-badge {
+    display: inline-block;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    margin: 20px 0;
+}
+
+/* Footer Section Rules */
+.footer {
+    padding: 40px 4%;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+/* Fluid Configuration Breakpoints */
+@media (max-width: 1024px) {
+    .collab-content {
+        grid-template-columns: 1fr;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fcfcfc;
+        border-bottom: 1px solid #eeeeee;
+        padding: 20px 4%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav.active {
+        display: flex;
+    }
+    .nav a {
+        margin-left: 0;
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+    .media-horizontal-strip img, .media-horizontal-strip video {
+        height: 280px;
+    }
+    .resume-buttons {
+        flex-direction: column;
+    }
+}
