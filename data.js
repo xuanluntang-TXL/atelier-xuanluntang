@@ -74,7 +74,40 @@ const ATELIER_DATA = {
     ],
 
     // 05 / DESIGN CAPSULE PDF STORAGE ARRAY
-    cloDesign: [],
+    cloDesign: [
+        { url: "assets/design-capsule/ye-22/cover.jpg", label: "Year End for YE 22" },
+        { url: "assets/design-capsule/ye-22/page-02.jpg", label: "Page 02" },
+        { url: "assets/design-capsule/ye-22/page-03.jpg", label: "Page 03" },
+        { url: "assets/design-capsule/ye-22/page-04.jpg", label: "Page 04" },
+        { url: "assets/design-capsule/ye-22/page-05.jpg", label: "Page 05" },
+        { url: "assets/design-capsule/ye-22/page-06.jpg", label: "Page 06" },
+        { url: "assets/design-capsule/ye-22/page-07.jpg", label: "Page 07" },
+        { url: "assets/design-capsule/ye-22/page-08.jpg", label: "Page 08" },
+        { url: "assets/design-capsule/ye-22/page-09.jpg", label: "Page 09" },
+        { url: "assets/design-capsule/ye-22/page-10.jpg", label: "Page 10" },
+        { url: "assets/design-capsule/ye-22/page-11.jpg", label: "Page 11" },
+        { url: "assets/design-capsule/ye-22/page-12.jpg", label: "Page 12" },
+        { url: "assets/design-capsule/ye-22/page-13.jpg", label: "Page 13" },
+        { url: "assets/design-capsule/ye-22/page-14.jpg", label: "Page 14" },
+        { url: "assets/design-capsule/ye-22/page-15.jpg", label: "Page 15" },
+        { url: "assets/design-capsule/ye-22/page-16.jpg", label: "Page 16" },
+        { url: "assets/design-capsule/ye-22/page-17.jpg", label: "Page 17" },
+        { url: "assets/design-capsule/ye-22/page-18.jpg", label: "Page 18" },
+        { url: "assets/design-capsule/ye-22/page-19.jpg", label: "Page 19" },
+        { url: "assets/design-capsule/ye-22/page-20.jpg", label: "Page 20" },
+        { url: "assets/design-capsule/ye-22/page-21.jpg", label: "Page 21" },
+        { url: "assets/design-capsule/ye-22/page-22.jpg", label: "Page 22" },
+        { url: "assets/design-capsule/ye-22/page-23.jpg", label: "Page 23" },
+        { url: "assets/design-capsule/ye-22/page-24.jpg", label: "Page 24" },
+        { url: "assets/design-capsule/ye-22/page-25.jpg", label: "Page 25" },
+        { url: "assets/design-capsule/ye-22/page-26.jpg", label: "Page 26" },
+        { url: "assets/design-capsule/ye-22/page-27.jpg", label: "Page 27" },
+        { url: "assets/design-capsule/ye-22/page-28.jpg", label: "Page 28" },
+        { url: "assets/design-capsule/ye-22/page-29.jpg", label: "Page 29" },
+        { url: "assets/design-capsule/ye-22/page-30.jpg", label: "Page 30" },
+        { url: "assets/design-capsule/ye-22/page-31.jpg", label: "Page 31" },
+        { url: "assets/design-capsule/ye-22/page-33.jpg", label: "Page 33" }
+    ],
 
     // 06 / PRINT DESIGN STORAGE ARRAY
     printDesign: [
