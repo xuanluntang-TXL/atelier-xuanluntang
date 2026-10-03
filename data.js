@@ -15,6 +15,13 @@ const ATELIER_DATA = {
     // 02 / COLLECTIONS MODULAR ENGINE (Add infinite seasonal sets)
     collections: [
         {
+            id: "elekta-2020",
+            title: "Design for ELEKTA 2020A/W &amp; 2020S/S",
+            blurb: "28-page design portfolio for ELEKTA, 2020 autumn/winter and spring/summer.",
+            lookbook: ["assets/elekta/elekta-01.jpg", "assets/elekta/elekta-02.jpg", "assets/elekta/elekta-03.jpg", "assets/elekta/elekta-04.jpg", "assets/elekta/elekta-05.jpg", "assets/elekta/elekta-06.jpg", "assets/elekta/elekta-07.jpg", "assets/elekta/elekta-08.jpg", "assets/elekta/elekta-09.jpg", "assets/elekta/elekta-10.jpg", "assets/elekta/elekta-11.jpg", "assets/elekta/elekta-12.jpg", "assets/elekta/elekta-13.jpg", "assets/elekta/elekta-14.jpg", "assets/elekta/elekta-15.jpg", "assets/elekta/elekta-16.jpg", "assets/elekta/elekta-17.jpg", "assets/elekta/elekta-18.jpg", "assets/elekta/elekta-19.jpg", "assets/elekta/elekta-20.jpg", "assets/elekta/elekta-21.jpg", "assets/elekta/elekta-22.jpg", "assets/elekta/elekta-23.jpg", "assets/elekta/elekta-24.jpg", "assets/elekta/elekta-25.jpg", "assets/elekta/elekta-26.jpg", "assets/elekta/elekta-27.jpg", "assets/elekta/elekta-28.jpg"],
+            garments: []
+        },
+        {
             id: "season-2026",
             title: "Collection 2026 / Quiet Metamorphosis",
             blurb: "An exploration of heavy tailoring silhouettes paired with delicate organic drapes. Developed with custom premium wool overlays.",
@@ -50,9 +57,19 @@ const ATELIER_DATA = {
     // 04 / AI EXPLORATION MODULAR DATA ENGINE
     aiExploration: [
         {
-            title: "Project Alpha / Surrealist Drapery Curation",
-            models: ["assets/ai_model1.jpg", "assets/ai_model2.jpg"],
-            lookbook: ["assets/ai_look1.jpg", "assets/ai_look2.jpg"]
+            title: "Design for NIKE 27AO",
+            models: ["assets/ai-exploration/Design for NIKE 27AO/Cover.png"],
+            lookbook: ["assets/ai-exploration/Design for NIKE 27AO/1zAbg.jpg", "assets/ai-exploration/Design for NIKE 27AO/3KkN6.jpg", "assets/ai-exploration/Design for NIKE 27AO/5jQDP.jpg", "assets/ai-exploration/Design for NIKE 27AO/CletB.jpg", "assets/ai-exploration/Design for NIKE 27AO/DEr6o.jpg", "assets/ai-exploration/Design for NIKE 27AO/HNbFo.jpg", "assets/ai-exploration/Design for NIKE 27AO/RHBDn.jpg", "assets/ai-exploration/Design for NIKE 27AO/c1sCl.jpg", "assets/ai-exploration/Design for NIKE 27AO/d3hoz.jpg", "assets/ai-exploration/Design for NIKE 27AO/dAyDY.jpg", "assets/ai-exploration/Design for NIKE 27AO/nNlT7 (1).jpg", "assets/ai-exploration/Design for NIKE 27AO/nToGU.jpg", "assets/ai-exploration/Design for NIKE 27AO/pDwJP.jpg", "assets/ai-exploration/Design for NIKE 27AO/sLcNH.jpg", "assets/ai-exploration/Design for NIKE 27AO/uaBlX.jpg", "assets/ai-exploration/Design for NIKE 27AO/yhjdO.jpg"]
+        },
+        {
+            title: "Men's Wear",
+            models: ["assets/ai-exploration/Men's Wear/Cover.png"],
+            lookbook: ["assets/ai-exploration/Men's Wear/Denim JKT-02.png", "assets/ai-exploration/Men's Wear/Denim JKT-03.png", "assets/ai-exploration/Men's Wear/Denim JKT-04.png", "assets/ai-exploration/Men's Wear/Denim JKT-06.png", "assets/ai-exploration/Men's Wear/Pinstripe denim-01.jpg", "assets/ai-exploration/Men's Wear/Pinstripe denim-02.jpg", "assets/ai-exploration/Men's Wear/Pinstripe denim-03.jpg", "assets/ai-exploration/Men's Wear/handstooth-Blazer-01.png", "assets/ai-exploration/Men's Wear/handstooth-Blazer-02.png", "assets/ai-exploration/Men's Wear/handstooth-Blazer-03.jpg", "assets/ai-exploration/Men's Wear/handstooth-Blazer-04.jpg", "assets/ai-exploration/Men's Wear/handstooth-Blazer-05.jpg", "assets/ai-exploration/Men's Wear/image (18).jpg", "assets/ai-exploration/Men's Wear/image (19).jpg", "assets/ai-exploration/Men's Wear/image (2).jpg", "assets/ai-exploration/Men's Wear/image (3).jpg", "assets/ai-exploration/Men's Wear/image (5).jpg", "assets/ai-exploration/Men's Wear/image (8).jpg", "assets/ai-exploration/Men's Wear/image - 2026-03-27T163052.007.jpg", "assets/ai-exploration/Men's Wear/image - 2026-03-27T163501.918.jpg"]
+        },
+        {
+            title: "Knit Texture",
+            models: ["assets/ai-exploration/Knit-Texture-01.jpg"],
+            lookbook: ["assets/ai-exploration/Knit-Texture-01Knit-Texture-05.jpg", "assets/ai-exploration/Knit-Texture-02.jpg", "assets/ai-exploration/Knit-Texture-06.jpg"]
         }
     ],
 
