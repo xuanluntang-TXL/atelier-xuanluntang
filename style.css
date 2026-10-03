@@ -390,3 +390,15 @@ body {
         flex-direction: column;
     }
 }
+
+/* Design Capsule decks: show the full cover and open the PDF */
+.capsule-grid a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.capsule-grid .grid-item-card img {
+    height: auto;
+    object-fit: contain;
+    background-color: #fafafa;
+}
