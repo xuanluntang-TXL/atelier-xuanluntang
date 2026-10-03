@@ -79,6 +79,11 @@ const ATELIER_DATA = {
             title: "Year End for YE 22",
             models: ["assets/design-capsule/ye-22/cover.jpg"],
             lookbook: ["assets/design-capsule/ye-22/page-02.jpg", "assets/design-capsule/ye-22/page-03.jpg", "assets/design-capsule/ye-22/page-04.jpg", "assets/design-capsule/ye-22/page-05.jpg", "assets/design-capsule/ye-22/page-06.jpg", "assets/design-capsule/ye-22/page-07.jpg", "assets/design-capsule/ye-22/page-08.jpg", "assets/design-capsule/ye-22/page-09.jpg", "assets/design-capsule/ye-22/page-10.jpg", "assets/design-capsule/ye-22/page-11.jpg", "assets/design-capsule/ye-22/page-12.jpg", "assets/design-capsule/ye-22/page-13.jpg", "assets/design-capsule/ye-22/page-14.jpg", "assets/design-capsule/ye-22/page-15.jpg", "assets/design-capsule/ye-22/page-16.jpg", "assets/design-capsule/ye-22/page-17.jpg", "assets/design-capsule/ye-22/page-18.jpg", "assets/design-capsule/ye-22/page-19.jpg", "assets/design-capsule/ye-22/page-20.jpg", "assets/design-capsule/ye-22/page-21.jpg", "assets/design-capsule/ye-22/page-22.jpg", "assets/design-capsule/ye-22/page-23.jpg", "assets/design-capsule/ye-22/page-24.jpg", "assets/design-capsule/ye-22/page-25.jpg", "assets/design-capsule/ye-22/page-26.jpg", "assets/design-capsule/ye-22/page-27.jpg", "assets/design-capsule/ye-22/page-28.jpg", "assets/design-capsule/ye-22/page-29.jpg", "assets/design-capsule/ye-22/page-30.jpg", "assets/design-capsule/ye-22/page-31.jpg", "assets/design-capsule/ye-22/page-33.jpg"]
+        },
+        {
+            title: "Cosy Winter for MA 23",
+            models: ["assets/design-capsule/cosy-winter-ma-23/cover.jpg"],
+            lookbook: ["assets/design-capsule/cosy-winter-ma-23/page-02.jpg", "assets/design-capsule/cosy-winter-ma-23/page-03.jpg", "assets/design-capsule/cosy-winter-ma-23/page-04.jpg", "assets/design-capsule/cosy-winter-ma-23/page-05.jpg", "assets/design-capsule/cosy-winter-ma-23/page-06.jpg", "assets/design-capsule/cosy-winter-ma-23/page-07.jpg"]
         }
     ],
 
