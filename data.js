@@ -94,7 +94,13 @@ const ATELIER_DATA = {
             title: "Trend Capsule for MS 22",
             models: ["assets/design-capsule/trend-capsule-ms-22/cover.jpg"],
             lookbook: ["assets/design-capsule/trend-capsule-ms-22/crafted-02.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-03.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-04.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-05.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-06.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-07.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-08.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-09.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-10.jpg", "assets/design-capsule/trend-capsule-ms-22/crafted-11.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-01.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-02.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-03.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-04.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-05.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-06.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-07.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-08.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-09.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-10.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-11.jpg", "assets/design-capsule/trend-capsule-ms-22/feminine-12.jpg"]
+        },
+        {
+            title: "Design Capsule for MS 24",
+            models: ["assets/design-capsule/ms-24/cover.jpg"],
+            lookbook: ["assets/design-capsule/ms-24/page-02.jpg", "assets/design-capsule/ms-24/page-03.jpg", "assets/design-capsule/ms-24/page-04.jpg", "assets/design-capsule/ms-24/page-05.jpg", "assets/design-capsule/ms-24/page-06.jpg", "assets/design-capsule/ms-24/page-07.jpg", "assets/design-capsule/ms-24/page-08.jpg", "assets/design-capsule/ms-24/page-09.jpg", "assets/design-capsule/ms-24/page-10.jpg", "assets/design-capsule/ms-24/page-11.jpg", "assets/design-capsule/ms-24/page-12.jpg"]
         }
+
     ],
 
     // 06 / PRINT DESIGN STORAGE ARRAY
