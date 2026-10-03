@@ -125,9 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="modular-header-title">${col.title}</div>
             <div class="modular-blurb">${col.blurb}</div>
             <div class="media-row-title">— Lookbook Curation</div>
-            <div class="media-horizontal-strip">${col.lookbook.map(img => `<img src="\${img}" alt="Lookbook Page">`).join('')}</div>
+            <div class="media-horizontal-strip">${col.lookbook.map(img => `<img src="${img}" alt="Lookbook Page">`).join('')}</div>
             <div class="media-row-title">— Garment & Textile Details</div>
-            <div class="media-horizontal-strip">${col.garments.map(img => `<img src="\${img}" alt="Detail View">`).join('')}</div>
+            <div class="media-horizontal-strip">${col.garments.map(img => `<img src="${img}" alt="Detail View">`).join('')}</div>
         `;
         collectionsContainer.appendChild(block);
     });
@@ -158,9 +158,9 @@ document.addEventListener("DOMContentLoaded", () => {
         block.innerHTML = `
             <div class="modular-header-title">${ai.title}</div>
             <div class="media-row-title">— Avatar & Model Generative Frameworks</div>
-            <div class="media-horizontal-strip">${ai.models.map(img => `<img src="\${img}" alt="AI Model Setup">`).join('')}</div>
+            <div class="media-horizontal-strip">${ai.models.map(img => `<img src="${img}" alt="AI Model Setup">`).join('')}</div>
             <div class="media-row-title">— Lookbook Scenarios</div>
-            <div class="media-horizontal-strip">${ai.lookbook.map(img => `<img src="\${img}" alt="AI Lookbook Scene">`).join('')}</div>
+            <div class="media-horizontal-strip">${ai.lookbook.map(img => `<img src="${img}" alt="AI Lookbook Scene">`).join('')}</div>
         `;
         aiContainer.appendChild(block);
     });
