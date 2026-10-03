@@ -84,6 +84,11 @@ const ATELIER_DATA = {
             title: "Cosy Winter for MA 23",
             models: ["assets/design-capsule/cosy-winter-ma-23/cover.jpg"],
             lookbook: ["assets/design-capsule/cosy-winter-ma-23/page-02.jpg", "assets/design-capsule/cosy-winter-ma-23/page-03.jpg", "assets/design-capsule/cosy-winter-ma-23/page-04.jpg", "assets/design-capsule/cosy-winter-ma-23/page-05.jpg", "assets/design-capsule/cosy-winter-ma-23/page-06.jpg", "assets/design-capsule/cosy-winter-ma-23/page-07.jpg"]
+        },
+        {
+            title: "Suits &amp; Blazer for MA23",
+            models: ["assets/design-capsule/suits-blazer-ma23/cover.jpg"],
+            lookbook: ["assets/design-capsule/suits-blazer-ma23/page-01.jpg", "assets/design-capsule/suits-blazer-ma23/page-02.jpg", "assets/design-capsule/suits-blazer-ma23/page-03.jpg", "assets/design-capsule/suits-blazer-ma23/page-04.jpg", "assets/design-capsule/suits-blazer-ma23/page-05.jpg", "assets/design-capsule/suits-blazer-ma23/page-06.jpg"]
         }
     ],
 
