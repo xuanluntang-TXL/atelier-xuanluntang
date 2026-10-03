@@ -1,209 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Atelier-FionaTang</title>
-  <meta name="description" content="Atelier-FionaTang — fashion design portfolio by Fiona Tang." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier-Xuanluntang | Fashion Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Minimalist Monospace Aesthetic -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <button class="nav-toggle" id="navToggle" aria-label="Menu">Menu</button>
 
-  <div class="app">
-    <aside class="nav" id="sideNav">
-      <div>
-        <a href="#home" class="brand" data-nav>Atelier-FionaTang</a>
-        <div class="brand-sub">Fashion Design Portfolio</div>
-      </div>
-      <ul class="nav-list" id="navList">
-        <!-- filled by JS -->
-      </ul>
-      <div class="nav-footer">© Atelier-FionaTang</div>
-    </aside>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="logo">Atelier-Xuanluntang</div>
+        <button class="menu-toggle" id="menuToggle">Menu</button>
+        <nav class="nav" id="navMenu">
+            <a href="#about">About</a>
+            <a href="#collections">Collections</a>
+            <a href="#beading">Beading & Embroidery</a>
+            <a href="#ai">AI Exploration</a>
+            <a href="#clo">CLO Design</a>
+            <a href="#print">Print Design</a>
+            <a href="#techpack">Tech Pack</a>
+            <a href="#sketches">Sketches</a>
+            <a href="#collaboration">Collaboration</a>
+            <a href="#shop">Online Shop</a>
+        </nav>
+    </header>
 
-    <main class="main" id="main">
-      <!-- HOME -->
-      <section class="panel panel--home active" id="panel-home" data-panel="home">
-        <p class="panel-kicker">00 / Atelier</p>
-        <h1 class="panel-title">Atelier-FionaTang</h1>
-        <p class="panel-lead">
-          Fashion through craft, silhouette, and quiet luxury —
-          collections, embroidery, digital exploration, and technical design.
-        </p>
-        <div class="home-meta">
-          <span>Fiona Tang</span>
-          <span>Fashion Designer</span>
-          <span>Portfolio</span>
-        </div>
-      </section>
+    <!-- Main Container -->
+    <main class="container">
 
-      <!-- ABOUT -->
-      <section class="panel" id="panel-about" data-panel="about">
-        <p class="panel-kicker">01 / About</p>
-        <h1 class="panel-title">Who I am</h1>
-        <p class="panel-lead">
-          Fiona Tang is a fashion designer working across collection design,
-          beading & embroidery, CLO 3D, print, and AI-assisted exploration.
-        </p>
-        <div class="panel-body">
-          <p>
-            My practice sits between atelier craft and contemporary digital tools —
-            building seasonal collections with clear silhouette language, refined
-            surface design, and production-ready technical packs.
-          </p>
-          <p>
-            I am skilled in garment construction thinking, lookbook storytelling,
-            embroidery / beading development, CLO Design, print design, tech packs,
-            and collaborative brand work.
-          </p>
-        </div>
-        <div class="skills">
-          <span class="skill">Collection Design</span>
-          <span class="skill">Beading & Embroidery</span>
-          <span class="skill">CLO 3D</span>
-          <span class="skill">Print Design</span>
-          <span class="skill">Tech Packs</span>
-          <span class="skill">AI Exploration</span>
-          <span class="skill">Sketches</span>
-        </div>
-        <div class="btn-row">
-          <a class="btn" href="resumes/Fiona-Tang-Resume-EN.pdf" id="en-resume" download="Fiona-Tang-Resume-EN.pdf">English Resume ↓</a>
-          <a class="btn btn--ghost" href="resumes/Fiona-Tang-Resume-CN.pdf" id="zh-resume" download="Fiona-Tang-Resume-CN.pdf">中文简历 ↓</a>
-        </div>
-      </section>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="section-number">00 / Atelier</div>
+            <h1 class="hero-title">Atelier-Xuanluntang</h1>
+            <p class="hero-sub">Fashion through craft, silhouette, and quiet luxury — collections, embroidery, digital exploration, and technical design.</p>
+        </section>
 
-      <!-- COLLECTIONS -->
-      <section class="panel" id="panel-collections" data-panel="collections">
-        <p class="panel-kicker">02 / Collections</p>
-        <h1 class="panel-title">Seasonal collections</h1>
-        <p class="panel-lead">
-          Modular lookbooks and garment details — add as many seasons as you need.
-        </p>
-        <div class="grid grid--2" id="collectionsGrid"></div>
-        <div class="detail" id="collectionDetail"></div>
-        <p class="add-hint">
-          Add a collection in <code>data.js</code> → <code>COLLECTIONS</code> array
-          (id, season, title, blurb, lookbook[], garments[]).
-        </p>
-      </section>
-
-      <!-- BEADING -->
-      <section class="panel" id="panel-beading" data-panel="beading">
-        <p class="panel-kicker">03 / Beading & Embroidery</p>
-        <h1 class="panel-title">Surface & craft</h1>
-        <p class="panel-lead">
-          Photo and video modules for beading and embroidery studies — expand freely.
-        </p>
-        <div class="module-list" id="beadingModules"></div>
-        <p class="add-hint">
-          Add modules in <code>data.js</code> → <code>BEADING_MODULES</code>
-          (title, media: [{type:'photo'|'video', label}]).
-        </p>
-      </section>
-
-      <!-- AI -->
-      <section class="panel" id="panel-ai" data-panel="ai">
-        <p class="panel-kicker">04 / AI Exploration</p>
-        <h1 class="panel-title">AI creation works</h1>
-        <p class="panel-lead">
-          Each module holds model studies and lookbook frames generated / directed with AI.
-        </p>
-        <div class="module-list" id="aiModules"></div>
-        <p class="add-hint">
-          Add projects in <code>data.js</code> → <code>AI_MODULES</code>
-          (title, models[], lookbook[]).
-        </p>
-      </section>
-
-      <!-- CLO -->
-      <section class="panel" id="panel-clo" data-panel="clo">
-        <p class="panel-kicker">05 / CLO Design</p>
-        <h1 class="panel-title">CLO Design</h1>
-        <p class="panel-lead">Digital garment studies and 3D draping stills.</p>
-        <div class="grid grid--3" id="cloGrid"></div>
-        <p class="add-hint">Add images in <code>data.js</code> → <code>CLO_PHOTOS</code>.</p>
-      </section>
-
-      <!-- PRINT -->
-      <section class="panel" id="panel-print" data-panel="print">
-        <p class="panel-kicker">06 / Print Design</p>
-        <h1 class="panel-title">Print design</h1>
-        <p class="panel-lead">Textile and surface print explorations.</p>
-        <div class="grid grid--2" id="printGrid"></div>
-        <p class="add-hint">Add prints in <code>data.js</code> → <code>PRINT_DESIGNS</code>.</p>
-      </section>
-
-      <!-- TECH PACK -->
-      <section class="panel" id="panel-techpack" data-panel="techpack">
-        <p class="panel-kicker">07 / Tech Pack</p>
-        <h1 class="panel-title">Technical packs</h1>
-        <p class="panel-lead">Downloadable attachments for production partners.</p>
-        <div class="download-list" id="techpackList"></div>
-        <p class="add-hint">
-          Place files in <code>techpacks/</code> and list them in
-          <code>data.js</code> → <code>TECH_PACKS</code>.
-        </p>
-      </section>
-
-      <!-- SKETCHES -->
-      <section class="panel" id="panel-sketches" data-panel="sketches">
-        <p class="panel-kicker">08 / Sketches</p>
-        <h1 class="panel-title">Sketches</h1>
-        <p class="panel-lead">Hand and digital sketch gallery.</p>
-        <div class="grid grid--4" id="sketchesGrid"></div>
-        <p class="add-hint">Add sketches in <code>data.js</code> → <code>SKETCHES</code>.</p>
-      </section>
-
-      <!-- COLLABORATION -->
-      <section class="panel" id="panel-collaboration" data-panel="collaboration">
-        <p class="panel-kicker">09 / Collaboration</p>
-        <h1 class="panel-title">Let’s collaborate</h1>
-        <p class="panel-lead">
-          Open to brand partnerships, capsule commissions, embroidery development,
-          and digital fashion projects.
-        </p>
-        <div class="collab-grid">
-          <ul class="collab-list">
-            <li>Seasonal capsule collections</li>
-            <li>Beading & embroidery development</li>
-            <li>CLO 3D visualization</li>
-            <li>Print & surface design</li>
-            <li>Tech pack & production support</li>
-            <li>AI lookbook direction</li>
-          </ul>
-          <div class="contact-block">
-            <h3>Contact</h3>
-            <p>Email: <a href="mailto:hello@atelier-fionatang.com">hello@atelier-fionatang.com</a></p>
-            <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@atelier.fionatang</a></p>
-            <p>Based in — (city placeholder)</p>
-            <div class="btn-row" style="margin-top:1.5rem">
-              <a class="btn" href="mailto:hello@atelier-fionatang.com">Write to me</a>
+        <!-- 01 / About Section -->
+        <section class="portfolio-section" id="about">
+            <div class="section-number">01 / About</div>
+            <h2 class="section-title">Who I am</h2>
+            <div class="about-content">
+                <p id="about-intro" class="text-block"></p>
+                <p id="about-skills" class="text-block text-muted"></p>
+                <div class="resume-buttons">
+                    <a href="resumes/English_Resume.pdf" class="btn btn-primary" download>English Resume ↓</a>
+                    <a href="resumes/Chinese_Resume.pdf" class="btn btn-primary" download>中文简历 ↓</a>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- ONLINE SHOP -->
-      <section class="panel" id="panel-shop" data-panel="shop">
-        <p class="panel-kicker">10 / Online Shop</p>
-        <h1 class="panel-title">Online Shop</h1>
-        <p class="panel-lead">Exclusive storefront — retained for launch.</p>
-        <div class="shop-empty">
-          <h3>Store coming soon</h3>
-          <p>This module is kept for the exclusive online store. Currently vacant.</p>
-          <a class="btn" href="https://example.com/atelier-fionatang-shop" target="_blank" rel="noopener" id="shopExternalLink">
-            Visit Online Shop →
-          </a>
-        </div>
-      </section>
+        <!-- 02 / Collections Section -->
+        <section class="portfolio-section" id="collections">
+            <div class="section-number">02 / Collections</div>
+            <h2 class="section-title">Seasonal Collections</h2>
+            <div id="collections-container" class="modular-container">
+                <!-- Injected via data.js -->
+            </div>
+        </section>
+
+        <!-- 03 / Beading & Embroidery Section -->
+        <section class="portfolio-section" id="beading">
+            <div class="section-number">03 / Beading & Embroidery</div>
+            <h2 class="section-title">Surface & Craft</h2>
+            <div id="beading-container" class="modular-container">
+                <!-- Injected via data.js -->
+            </div>
+        </section>
+
+        <!-- 04 / AI Exploration Section -->
+        <section class="portfolio-section" id="ai">
+            <div class="section-number">04 / AI Exploration</div>
+            <h2 class="section-title">AI Creation Works</h2>
+            <div id="ai-container" class="modular-container">
+                <!-- Injected via data.js -->
+            </div>
+        </section>
+
+        <!-- 05 / CLO Design Section -->
+        <section class="portfolio-section" id="clo">
+            <div class="section-number">05 / CLO Design</div>
+            <h2 class="section-title">CLO Design</h2>
+            <div id="clo-container" class="image-grid-modular">
+                <!-- Injected via data.js -->
+            </div>
+        </section>
+
+        <!-- 06 / Print Design Section -->
+        <section class="portfolio-section" id="print">
+            <div class="section-number">06 / Print Design</div>
+            <h2 class="section-title">Print Design</h2>
+            <div id="print-container" class="image-grid-modular">
+                <!-- Injected via data.js -->
+            </div>
+        </section>
+
+        <!-- 07 / Tech Pack Section -->
+        <section class="portfolio-section" id="techpack">
+            <div class="section-number">07 / Tech Pack</div>
+            <h2 class="section-title">Technical Packs</h2>
+            <div id="techpack-container" class="techpack-grid">
+                <!-- Injected via data.js -->
+            </div>
+        </section>
+
+        <!-- 08 / Sketches Section -->
+        <section class="portfolio-section" id="sketches">
+            <div class="section-number">08 / Sketches</div>
+            <h2 class="section-title">Sketches</h2>
+            <div id="sketches-container" class="image-grid-modular">
+                <!-- Injected via data.js -->
+            </div>
+        </section>
+
+        <!-- 09 / Collaboration Section -->
+        <section class="portfolio-section" id="collaboration">
+            <div class="section-number">09 / Collaboration</div>
+            <h2 class="section-title">Let's Collaborate</h2>
+            <div class="collab-content">
+                <div class="collab-info" id="collab-instructions"></div>
+                <div class="contact-card">
+                    <h3>Contact</h3>
+                    <p id="contact-email"></p>
+                    <p id="contact-instagram"></p>
+                    <p id="contact-location"></p>
+                    <a href="mailto:your-email@example.com" id="contact-btn" class="btn btn-secondary">Write to me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 / Online Shop Section -->
+        <section class="portfolio-section" id="shop">
+            <div class="section-number">10 / Online Shop</div>
+            <h2 class="section-title">Online Shop</h2>
+            <div class="shop-placeholder">
+                <p class="text-block">Exclusive storefront — retained for launch.</p>
+                <div class="vacant-badge">STORE COMING SOON</div>
+                <a href="#" class="btn btn-disabled" onclick="return false;">Visit Online Shop →</a>
+            </div>
+        </section>
+
     </main>
-  </div>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; Atelier-Xuanluntang. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Core Logic Engines -->
+    <script src="data.js"></script>
+    <script>
+        // Simple Single-Page UI Menu Toggle Animation Engine
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.textContent = navMenu.classList.contains('active') ? 'Close' : 'Menu';
+        });
+
+        // Close menu when links are clicked on small configurations
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.textContent = 'Menu';
+            });
+        });
+    </script>
 </body>
 </html>
