@@ -104,7 +104,13 @@ const ATELIER_DATA = {
             title: "Garden Florals for SOAKED",
             models: ["assets/design-capsule/garden-florals-soaked/cover.jpg"],
             lookbook: ["assets/design-capsule/garden-florals-soaked/page-02.jpg", "assets/design-capsule/garden-florals-soaked/page-03.jpg", "assets/design-capsule/garden-florals-soaked/page-04.jpg", "assets/design-capsule/garden-florals-soaked/page-05.jpg", "assets/design-capsule/garden-florals-soaked/page-06.jpg", "assets/design-capsule/garden-florals-soaked/page-07.jpg"]
+        },
+        {
+            title: "Light Denim for Express",
+            models: ["assets/design-capsule/light-denim-express/cover.jpg"],
+            lookbook: ["assets/design-capsule/light-denim-express/page-02.jpg", "assets/design-capsule/light-denim-express/page-03.jpg", "assets/design-capsule/light-denim-express/page-04.jpg", "assets/design-capsule/light-denim-express/page-05.jpg", "assets/design-capsule/light-denim-express/page-06.jpg", "assets/design-capsule/light-denim-express/page-07.jpg", "assets/design-capsule/light-denim-express/page-08.jpg"]
         }
+
 
 
     ],
