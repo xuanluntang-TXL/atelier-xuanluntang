@@ -99,7 +99,13 @@ const ATELIER_DATA = {
             title: "Design Capsule for MS 24",
             models: ["assets/design-capsule/ms-24/cover.jpg"],
             lookbook: ["assets/design-capsule/ms-24/page-02.jpg", "assets/design-capsule/ms-24/page-03.jpg", "assets/design-capsule/ms-24/page-04.jpg", "assets/design-capsule/ms-24/page-05.jpg", "assets/design-capsule/ms-24/page-06.jpg", "assets/design-capsule/ms-24/page-07.jpg", "assets/design-capsule/ms-24/page-08.jpg", "assets/design-capsule/ms-24/page-09.jpg", "assets/design-capsule/ms-24/page-10.jpg", "assets/design-capsule/ms-24/page-11.jpg", "assets/design-capsule/ms-24/page-12.jpg"]
+        },
+        {
+            title: "Garden Florals for SOAKED",
+            models: ["assets/design-capsule/garden-florals-soaked/cover.jpg"],
+            lookbook: ["assets/design-capsule/garden-florals-soaked/page-02.jpg", "assets/design-capsule/garden-florals-soaked/page-03.jpg", "assets/design-capsule/garden-florals-soaked/page-04.jpg", "assets/design-capsule/garden-florals-soaked/page-05.jpg", "assets/design-capsule/garden-florals-soaked/page-06.jpg", "assets/design-capsule/garden-florals-soaked/page-07.jpg"]
         }
+
 
     ],
 
