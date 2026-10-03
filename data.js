@@ -74,20 +74,7 @@ const ATELIER_DATA = {
     ],
 
     // 05 / DESIGN CAPSULE PDF STORAGE ARRAY
-    cloDesign: [
-        { url: "assets/design-capsule/alternative-leather.jpg", fileUrl: "assets/design-capsule/alternative-leather.pdf", label: "Alternative Leather" },
-        { url: "assets/design-capsule/cosy-winter-for-23ma.jpg", fileUrl: "assets/design-capsule/cosy-winter-for-23ma.pdf", label: "Cosy Winter for 23MA" },
-        { url: "assets/design-capsule/crafted-openwork.jpg", fileUrl: "assets/design-capsule/crafted-openwork.pdf", label: "Crafted Openwork" },
-        { url: "assets/design-capsule/feminine-cotton.jpg", fileUrl: "assets/design-capsule/feminine-cotton.pdf", label: "Feminine cotton" },
-        { url: "assets/design-capsule/garden-florals-for-soaked.jpg", fileUrl: "assets/design-capsule/garden-florals-for-soaked.pdf", label: "Garden Florals for SOAKED" },
-        { url: "assets/design-capsule/light-denim-for-express-line.jpg", fileUrl: "assets/design-capsule/light-denim-for-express-line.pdf", label: "Light Denim for Express Line" },
-        { url: "assets/design-capsule/new-shapes-materials-for-26aw.jpg", fileUrl: "assets/design-capsule/new-shapes-materials-for-26aw.pdf", label: "New Shapes &amp; Materials for 26AW" },
-        { url: "assets/design-capsule/occasion-wear-for-ye-23.jpg", fileUrl: "assets/design-capsule/occasion-wear-for-ye-23.pdf", label: "Occasion Wear for YE 23" },
-        { url: "assets/design-capsule/styles-cuttings-for-ye-24.jpg", fileUrl: "assets/design-capsule/styles-cuttings-for-ye-24.pdf", label: "Styles &amp; Cuttings for YE 24" },
-        { url: "assets/design-capsule/suits-blazer-for-ma23.jpg", fileUrl: "assets/design-capsule/suits-blazer-for-ma23.pdf", label: "Suits &amp; Blazer for MA23" },
-        { url: "assets/design-capsule/trend-capsule-for-ms-24.jpg", fileUrl: "assets/design-capsule/trend-capsule-for-ms-24.pdf", label: "Trend Capsule for MS 24" },
-        { url: "assets/design-capsule/year-end-for-ye-22.jpg", fileUrl: "assets/design-capsule/year-end-for-ye-22.pdf", label: "Year End for YE 22" }
-    ],
+    cloDesign: [],
 
     // 06 / PRINT DESIGN STORAGE ARRAY
     printDesign: [
