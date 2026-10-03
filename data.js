@@ -68,8 +68,8 @@ const ATELIER_DATA = {
         },
         {
             title: "Knit Texture",
-            models: ["assets/ai-exploration/Knit-Texture-01.jpg"],
-            lookbook: ["assets/ai-exploration/Knit-Texture-01Knit-Texture-05.jpg", "assets/ai-exploration/Knit-Texture-02.jpg", "assets/ai-exploration/Knit-Texture-06.jpg"]
+            models: ["assets/ai-exploration/Knit Texture/Cover.png"],
+            lookbook: ["assets/ai-exploration/Knit-Texture-01.jpg", "assets/ai-exploration/Knit-Texture-01Knit-Texture-05.jpg", "assets/ai-exploration/Knit-Texture-02.jpg", "assets/ai-exploration/Knit-Texture-06.jpg"]
         }
     ],
 
